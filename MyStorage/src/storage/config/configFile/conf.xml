@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <!-- mysql配置 -->
+  <mysqlConfig>
+    <url>jdbc:mysql://localhost:3309/storagetest</url>  
+    <user>root</user>  
+    <pass>123</pass>   
+  </mysqlConfig>
+  <!-- memcached配置 -->
+  <memcachedConfig>
+    <servers>
+      <server>127.0.0.1:11211</server>
+    </servers>
+    <initConn>50</initConn>
+    <minConn>50</minConn>
+    <maxConn>500</maxConn>
+    <maxIdle>3600000</maxIdle>
+    <maintSleep>3000</maintSleep>
+    <nagle>false</nagle>
+    <socketTO>3000</socketTO>
+    <socketConnectTO>0</socketConnectTO>
+  </memcachedConfig>
+</config>
